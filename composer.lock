@@ -454,16 +454,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.6",
+            "version": "v5.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "93e761bb5367166ce98ba908d5eb0edd6be76792"
+                "reference": "0438455128c0850b5872c7f3c11b7ccdbbfcba3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/93e761bb5367166ce98ba908d5eb0edd6be76792",
-                "reference": "93e761bb5367166ce98ba908d5eb0edd6be76792",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0438455128c0850b5872c7f3c11b7ccdbbfcba3e",
+                "reference": "0438455128c0850b5872c7f3c11b7ccdbbfcba3e",
                 "shasum": ""
             },
             "require": {
@@ -475,6 +475,7 @@
                 "league/flysystem": "^1.0.8",
                 "monolog/monolog": "^1.12",
                 "nesbot/carbon": "^1.26.3",
+                "opis/closure": "^3.1",
                 "php": "^7.1.3",
                 "psr/container": "^1.0",
                 "psr/simple-cache": "^1.0",
@@ -591,7 +592,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-09-25T14:29:00+00:00"
+            "time": "2018-10-02T14:12:00+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -923,6 +924,67 @@
                 "php"
             ],
             "time": "2018-09-18T07:03:24+00:00"
+        },
+        {
+            "name": "opis/closure",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opis/closure.git",
+                "reference": "d3209e46ad6c69a969b705df0738fd0dbe26ef9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opis/closure/zipball/d3209e46ad6c69a969b705df0738fd0dbe26ef9e",
+                "reference": "d3209e46ad6c69a969b705df0738fd0dbe26ef9e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0"
+            },
+            "require-dev": {
+                "jeremeamia/superclosure": "^2.0",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                },
+                "files": [
+                    "functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Sarca",
+                    "email": "marius.sarca@gmail.com"
+                },
+                {
+                    "name": "Sorin Sarca",
+                    "email": "sarca_sorin@hotmail.com"
+                }
+            ],
+            "description": "A library that can be used to serialize closures (anonymous functions) and arbitrary objects.",
+            "homepage": "https://opis.io/closure",
+            "keywords": [
+                "anonymous functions",
+                "closure",
+                "function",
+                "serializable",
+                "serialization",
+                "serialize"
+            ],
+            "time": "2018-10-02T13:36:53+00:00"
         },
         {
             "name": "paragonie/random_compat",
