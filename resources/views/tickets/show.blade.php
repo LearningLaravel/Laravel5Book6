@@ -44,6 +44,7 @@
 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="post_id" value="{{ $ticket->id }}">
+                <input type="hidden" name="post_type" value="App\Ticket">
 
                 <fieldset>
                     <legend class="ml-3">Reply</legend>

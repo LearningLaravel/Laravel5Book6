@@ -10,6 +10,9 @@
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
@@ -20,8 +23,15 @@
                     Member
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/users/register">Register</a>
-                    <a class="dropdown-item" href="/users/login">Login</a>
+                    @if (Auth::check())
+                        @role('manager')
+                            <a class="dropdown-item" href="/admin">Admin</a>
+                        @endrole
+                        <a class="dropdown-item" href="/users/logout">Logout</a>
+                    @else
+                        <a class="dropdown-item" href="/users/register">Register</a>
+                        <a class="dropdown-item" href="/users/login">Login</a>
+                    @endif
                 </div>
             </li>
         </ul>
